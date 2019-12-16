@@ -7,5 +7,6 @@ public class Test {
         SimpleAnnotationApplicationContext context = new SimpleAnnotationApplicationContext("com.simple.ioc");
         UserService userService = (UserService) context.getBean("userService");
         System.out.println(userService);
+        userService.test();
     }
 }
